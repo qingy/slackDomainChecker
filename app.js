@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
   res.send('This is a domain checker application built with node.js, Express.js and is running on Heroku. Send a POST request with the domain in question to receive information');
 });
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(process.env.PORT || 5000, function () {
   console.log('Domain checker app for Slack bot has started');
 });
 
@@ -59,7 +59,7 @@ app.post('/', function (req, res) {
 			  	} else {
 			  		responseObj.attachments.push(attachment);
 			  	}
-			  	
+
 			  }
 			}
 
